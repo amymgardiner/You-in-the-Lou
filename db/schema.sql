@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS blogfeed_db;
+
+CREATE DATABASE blogfeed_db;

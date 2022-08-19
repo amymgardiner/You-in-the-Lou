@@ -1,0 +1,33 @@
+{{!-- hero image --}}
+<div class='hero'>
+  <img src='../assets/st.-louis-header.jpg' alt='St. Louis Skyline'/>
+</div>
+
+{{!-- side widget to stay in one place and show popular local attractions --}}
+<div class="widget">
+  <ul style="list-style-type:none">
+    <h2>Always a sure bet:</h2>
+    <li><a href='https://www.gatewayarch.com'>&#128508; &nbsp;&nbsp; Gateway Arch</a></li>
+    <li><a href='https://www.mlb.com/cardinals'>&#9918; &nbsp;&nbsp; St. Louis Cardinals</a></li>
+    <li><a href='https://www.nhl.com/blues'>&#127954; &nbsp;&nbsp; St. Louis Blues</a></li>
+    <li><a href='https://www.stlcitysc.com'>&#9917; &nbsp;&nbsp; St. Louis City SC</a></li>
+    <li><a href='https://www.missouribotanicalgarden.org'>&#127799; &nbsp;&nbsp; Missouri Botanical Garden</a></li>
+    <li><a href='https://www.citymuseum.org'>&#127905; &nbsp;&nbsp; City Museum</a></li>
+    <li><a href='https://www.stlzoo.org'>&#128039; &nbsp;&nbsp; Saint Louis Zoo</a></li>
+    <li><a href='https://www.stlouisunionstation.com'>&#128646; &nbsp;&nbsp; St. Louis Union Station</a></li>
+    <li><a href='https://www.slam.org'>&#127912; &nbsp;&nbsp; Saint Louis Art Museum</a></li>
+    <li><a href='https://www.slsc.org'>&#128300; &nbsp;&nbsp;  Saint Louis Science Center</a></li>
+    <li><a href='https://www.enterprisecenter.com'>&#127967; &nbsp;&nbsp;&nbsp; Enterprise Center</a></li>
+    <li><a href='http://thechaifetzarena.com'>&#127928; &nbsp;&nbsp; Chaifetz Arena</a></li>
+    <li><a href='https://www.fabulousfox.com'>&#127917; &nbsp;&nbsp; The Fabulous Fox Theatre</a></li>
+  </ul>
+</div>
+
+{{!-- lists of created posts --}}
+<ul style="list-style-type:circle" class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ul>

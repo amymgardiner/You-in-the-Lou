@@ -1,0 +1,43 @@
+<div class='heartimg'>
+  <img src='../assets/2022-08-12.png' alt='St. Louis Flag Heart' />
+</div>
+
+<section>
+  <h2>Create New Post</h2>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-url">Link</label>
+      <input id="post-url" name="post-url" />
+    </div>
+     <div>
+      <label for="post_address">Location</label>
+      <input type="text" id="post_address" name="post_address" />
+    </div>
+    <div>
+      <label for="post-description">Description</label>
+      <textarea name="post-description" id="post-description"></textarea>
+    </div>
+    <button type="submit" class="btn">Create</button>
+  </form>
+</section>
+<p> <br /> </p>
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script>

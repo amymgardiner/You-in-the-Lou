@@ -1,0 +1,25 @@
+<div class='heartimg'>
+  <img src='../assets/2022-08-12.png' alt='St. Louis Flag Heart' />
+</div>
+
+{{> post-info post}}
+
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit" class="comment-btn">add comment &#9997;</button>
+    <button type="button" class="upvote-btn">like &#128077;</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>
+{{/if}}

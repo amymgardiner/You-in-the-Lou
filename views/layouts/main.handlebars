@@ -1,0 +1,46 @@
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>You in The Lou</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Rock+Salt&family=Unica+One&display=swap'
+      rel='stylesheet'
+    />
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
+    />
+  </head>
+
+  <body>
+    <div class='wrapper'>
+      <header>
+        <h1 class='animate__animated animate__pulse'>
+          <a href='/' class='title'>You in The Lou</a>
+        </h1>
+        <nav class='header-nav'>
+          {{#if loggedIn}}
+            <a href='/dashboard' class='dashboard-btn'>dashboard</a>
+            <button id='logout' class='btn-no-style'>logout</button>
+          {{else}}
+            <a href='/login'>login</a>
+          {{/if}}
+        </nav>
+      </header>
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Meet me in St. Louis!
+      </footer>
+    </div>
+
+    {{#if loggedIn}}
+      <script src='/javascript/logout.js'></script>
+    {{/if}}
+  </body>
+
+</html>
