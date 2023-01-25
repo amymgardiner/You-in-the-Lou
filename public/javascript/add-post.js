@@ -1,8 +1,8 @@
 // function listens to buttons on dashboard page and creates a post linked the the backend database
 async function newFormHandler(event) {
   event.preventDefault();
-  
-//Locates current document to use POST method
+
+  //Locates current document to use POST method
   const title = document.querySelector('input[name="post-title"]').value;
   const post_url = document.querySelector('input[name="post-url"]').value;
   const post_description = document.querySelector(
