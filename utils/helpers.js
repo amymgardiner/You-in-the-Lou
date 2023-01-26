@@ -20,6 +20,6 @@ module.exports = {
     return word;
   },
   format_break: (paragraph) => {
-    return paragraph.replaceAll('\n', '<br />');
+    return paragraph.replace('\n', '<br />');
   },
 };
