@@ -24,6 +24,8 @@ Our application utilizes:
 
 -Heroku for the deployed application
 
+**Update: Due to the removal of Heroku's free product plans, I have found another free hosting platform that was not taught in the bootcamp. The [Heroku link](https://cryptic-harbor-15816.herokuapp.com/) for this site no longer works. Please view this site with the new link below. Thanks!**
+
 ## User Story
 
 As a transplant to St. Louis, or a tourist, or a local looking to find more to love about my city; I want to be able to look up local events posted by locals. I would also like these posts to have a social media feel to them so I can interact with other users and make new friends along the way!
@@ -50,8 +52,8 @@ WHEN I look at the overall layout of the page, THEN I find it to be a polished, 
 
 [Original Project Repo](https://github.com/olliedirker/You-in-the-Lou)
 
+`Note: I use Render now for hosting my school projects, on their free plan. A free plan will spin down after 15 minutes of inactivity, and the next request will spin it back up, which can take awhile. So please be patient as the site may take some time to initially load due to Render restrictions.`
+
 [You In The Lou](https://you-in-the-lou.onrender.com/)
 
 ![gp-2 herokuapp com_](https://user-images.githubusercontent.com/99151426/185245761-61804530-780e-4819-a6e1-6ff350c004f6.png)
-
-**Update: Due to the removal of Heroku's free product plans, I have found another free hosting platform that was not taught in the bootcamp. The [Heroku link](https://cryptic-harbor-15816.herokuapp.com/) for this site no longer works. Please view this site with the new link above. Thanks!**
